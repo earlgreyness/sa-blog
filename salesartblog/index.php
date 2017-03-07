@@ -524,13 +524,6 @@
     </button>
   </div>
 
-
-  <!-- jQuery -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-  <!-- Модальные окна -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-
   <?php wp_footer(); ?>
 </body>
 </html>
