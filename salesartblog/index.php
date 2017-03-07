@@ -21,7 +21,7 @@
   <script>
     var ajax = new XMLHttpRequest();
 
-    ajax.open('GET', 'img/sprites.svg', true);
+    ajax.open('GET', "<?php echo get_template_directory_uri() ?>/img/sprites.svg", true);
 
     ajax.send();
 
@@ -36,7 +36,7 @@
     }
   </script>
 
-  <?php wp_head();?>
+  <?php wp_head(); ?>
 
 </head>
 
@@ -531,7 +531,6 @@
   <!-- Модальные окна -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 
-  <!-- Кастомный js-код -->
-  <script src="js/custom.js"></script>
+  <?php wp_footer(); ?>
 </body>
 </html>
