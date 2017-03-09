@@ -5,7 +5,10 @@ function salesart_enqueue_scripts() {
     wp_enqueue_style( 'salesart-styles', $dir . '/css/styles.css', array(), null );
 
     wp_deregister_script( 'jquery' );
-    wp_register_script( 'jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js', array(), null, true );
+    wp_register_script(
+        'jquery',
+        'https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js',
+        array(), null, true );
 
     wp_enqueue_script(
         'jquery-magnific-popup',
@@ -19,4 +22,3 @@ add_action( 'wp_enqueue_scripts', 'salesart_enqueue_scripts' );
 
 // Добавляем поддержку миниатюр для записей.
 add_theme_support( 'post-thumbnails' );
-
