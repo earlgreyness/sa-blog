@@ -24,5 +24,5 @@
   <?php the_excerpt(); ?>
   </div>
 
-  <a class="post__more" href="article.html">Читать подробнее</a>
+  <a class="post__more" href="<?php the_permalink(); ?>">Читать подробнее</a>
 </article>
