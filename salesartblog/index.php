@@ -274,6 +274,12 @@
 
           endwhile;
 
+          the_posts_pagination( array(
+              'mid_size' => 2,
+              'prev_text' => 'Предыдущая',
+              'next_text' => 'Следующая',
+          ) );
+
         endif;
         ?>
 
