@@ -12,7 +12,10 @@ function salesart_enqueue_scripts() {
         'https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js',
         array('jquery'), null, true );
 
-    wp_enqueue_script( 'salesart-scripts', $dir . '/js/custom.js', array('jquery'), null, true );
+    wp_enqueue_script( 'salesart-scripts', $dir . '/js/custom.js', array( 'jquery' ), null, true );
 }
 
 add_action( 'wp_enqueue_scripts', 'salesart_enqueue_scripts' );
+
+add_theme_support( 'post-thumbnails' );
+

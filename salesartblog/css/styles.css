@@ -2084,13 +2084,20 @@ html, body {
   line-height: 1.2;
 }
 
-.post__thumb {
+.post__thumb, .wp-post-image {
   display: block;
   margin: 0 auto 2rem;
   max-width: 100%;
 }
 
-.post__text {
+/*.post__text {
+  margin: 0 0 2rem;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.5;
+}*/
+
+.post__content p {
   margin: 0 0 2rem;
   font-size: 1.8rem;
   font-weight: 300;
@@ -2179,7 +2186,7 @@ html, body {
   line-height: 1.5;
 }
 
-.meta__tag {
+.meta__tags a {
   display: inline;
   vertical-align: middle;
   margin-right: 0.5em;
@@ -2190,11 +2197,22 @@ html, body {
   text-decoration: underline;
 }
 
-.meta__tag:hover {
+/*.meta__tag {
+  display: inline;
+  vertical-align: middle;
+  margin-right: 0.5em;
+  color: #333 !important;
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 1.5;
+  text-decoration: underline;
+}*/
+
+.meta__tags a:hover {
   text-decoration: none;
 }
 
-.meta__tag:active {
+.meta__tags a:active {
   text-decoration: underline;
 }
 

@@ -264,119 +264,18 @@
           </li>
         </ul>
 
-
-        <!-- Для страницы "Категория" -->
-        <div class="category">
-          <p class="category__title">Статьи раздела Аналитика</p>
-
-          <p class="category__text">Основатели Ригель Групп (Rigelgroup.ru) Дмитрий Гордеев, Денис Казанцев и Василий Сурин поделились опытом
-            создания высокотехнологичной бережливой (lean) компании в достаточно консервативной отрасли.</p>
-
-          <div class="category-popular">
-            <p class="category-popular__title">Популярные теги в данной категории:</p>
-
-            <a class="category-popular__tag" href="#">Google Analytics</a>
-            <a class="category-popular__tag" href="#">Яндекс.Метрика</a>
-            <a class="category-popular__tag" href="#">Google Analytics</a>
-            <a class="category-popular__tag" href="#">Яндекс.Метрика</a>
-            <a class="category-popular__tag" href="#">Google Analytics</a>
-            <a class="category-popular__tag" href="#">Яндекс.Метрика</a>
-            <a class="category-popular__tag" href="#">Google Analytics</a>
-          </div>
-        </div>
-
-
-        <!-- Баннер -->
-        <a class="banner" href="#" target="_blank">
-          <img src="http://placehold.it/661x188">
-        </a>
-
-
         <!-- Анонсы статей -->
-        <article class="post">
-          <p class="post__title">Настройка сквозной аналитики (проверка на переполнение)</p>
+        <?php
+        if ( have_posts() ) :
 
-          <div class="meta">
-            <svg class="meta__icon">
-              <use xlink:href="#icon-avatar"></use>
-            </svg>
+          while ( have_posts() ) : the_post();
 
-            <span class="meta__name">Василий Сурин,&nbsp;</span>
+            get_template_part( 'content', get_post_format() );
 
-            <time class="meta__date" datetime="2015-03-14">14 марта 2015,&nbsp;</time>
+          endwhile;
 
-            <span class="meta__tags">
-              <a class="meta__tag" href="#">Аналитика</a>
-              <a class="meta__tag" href="#">Яндекс.Директ</a>
-              <a class="meta__tag" href="#">Семантическое ядро</a>
-            </span>
-          </div>
-
-          <img class="post__thumb" src="http://placehold.it/661x413" alt="Изображение">
-
-          <p class="post__text">Основатели Ригель Групп (Rigelgroup.ru) Дмитрий Гордеев, Денис Казанцев и Василий Сурин поделились опытом создания
-            высокотехнологичной бережливой (lean) компании в достаточно консервативной отрасли.</p>
-
-          <a class="post__more" href="article.html">Читать подробнее</a>
-        </article>
-
-        <article class="post">
-          <p class="post__title">Настройка сквозной аналитики</p>
-
-          <div class="meta">
-            <svg class="meta__icon">
-              <use xlink:href="#icon-avatar"></use>
-            </svg>
-
-            <span class="meta__name">Василий Сурин,&nbsp;</span>
-
-            <time class="meta__date" datetime="2015-03-14">14 марта 2015,&nbsp;</time>
-
-            <span class="meta__tags">
-              <a class="meta__tag" href="#">Аналитика</a>
-              <a class="meta__tag" href="#">Яндекс.Директ</a>
-              <a class="meta__tag" href="#">Семантическое ядро</a>
-            </span>
-          </div>
-
-          <img class="post__thumb" src="http://placehold.it/661x413" alt="Изображение">
-
-          <p class="post__text">Основатели Ригель Групп (Rigelgroup.ru) Дмитрий Гордеев, Денис Казанцев и Василий Сурин поделились опытом создания
-            высокотехнологичной бережливой (lean) компании в достаточно консервативной отрасли.</p>
-
-          <a class="post__more" href="article.html">Читать подробнее</a>
-        </article>
-
-        <article class="post">
-          <p class="post__title">Настройка сквозной аналитики (проверка на переполнение)</p>
-
-          <div class="meta">
-            <svg class="meta__icon">
-              <use xlink:href="#icon-avatar"></use>
-            </svg>
-
-            <span class="meta__name">Василий Сурин,&nbsp;</span>
-
-            <time class="meta__date" datetime="2015-03-14">14 марта 2015,&nbsp;</time>
-
-            <span class="meta__tags">
-              <a class="meta__tag" href="#">Аналитика</a>
-              <a class="meta__tag" href="#">Яндекс.Директ</a>
-              <a class="meta__tag" href="#">Семантическое ядро</a>
-              <a class="meta__tag" href="#">Аналитика</a>
-              <a class="meta__tag" href="#">Яндекс.Директ</a>
-              <a class="meta__tag" href="#">Семантическое ядро</a>
-            </span>
-          </div>
-
-          <img class="post__thumb" src="http://placehold.it/661x413" alt="Изображение">
-
-          <p class="post__text">Основатели Ригель Групп (Rigelgroup.ru) Дмитрий Гордеев, Денис Казанцев и Василий Сурин поделились опытом создания
-            высокотехнологичной бережливой (lean) компании в достаточно консервативной отрасли.</p>
-
-          <a class="post__more" href="article.html">Читать подробнее</a>
-        </article>
-
+        endif;
+        ?>
 
         <!-- Пагинация -->
         <div class="pagination">
