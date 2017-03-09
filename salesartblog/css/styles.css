@@ -2084,7 +2084,7 @@ html, body {
   line-height: 1.2;
 }
 
-.post__thumb, .wp-post-image {
+.post__thumb {
   display: block;
   margin: 0 auto 2rem;
   max-width: 100%;

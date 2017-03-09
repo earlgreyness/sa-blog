@@ -18,8 +18,7 @@
     ?>
   </div>
 
-  <!-- <img class="post__thumb" src="http://placehold.it/661x413" alt="Изображение"> -->
-  <?php the_post_thumbnail( array( 661, 413 ) ); ?>
+  <?php the_post_thumbnail( array( 661, 413 ), array( 'class' => 'post__thumb' ) ); ?>
 
   <div class="post__content">
   <?php the_excerpt(); ?>
