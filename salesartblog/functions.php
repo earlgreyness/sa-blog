@@ -17,5 +17,6 @@ function salesart_enqueue_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'salesart_enqueue_scripts' );
 
+// Добавляем поддержку миниатюр для записей.
 add_theme_support( 'post-thumbnails' );
 
