@@ -16,8 +16,19 @@
         <!-- Меню -->
         <nav class="s-menu">
           <p class="s-menu__title">Статьи по разделам</p>
+            <ul class="s-menu__wrapper">
+              <?php
+              wp_list_categories( array(
+                'hide_empty' => false,
+                'exclude' => array( 1 ),
+                'title_li' => '',
+                'order' => 'ASC',
+                'orderby' => 'ID'
+              ) );
+              ?>
+            </ul>
 
-          <ul class="s-menu__wrapper">
+          <!-- <ul class="s-menu__wrapper">
             <li class="s-menu__item">
               <a class="s-menu__link" href="#">Контекстная реклама</a>
             </li>
@@ -71,7 +82,7 @@
             <li class="s-menu__item">
               <a class="s-menu__link" href="#">Видеоуроки</a>
             </li>
-          </ul>
+          </ul> -->
         </nav>
 
 

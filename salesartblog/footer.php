@@ -6,7 +6,7 @@
       <div class="footer__container">
 
         <!-- Первая колонка меню -->
-        <div class="f-menu">
+        <!-- <div class="f-menu">
           <p class="f-menu__title">Услуги</p>
 
           <ul class="f-menu__wrapper">
@@ -26,11 +26,11 @@
               <a class="f-menu__link" href="#">Ссылка 4</a>
             </li>
           </ul>
-        </div>
+        </div> -->
 
 
         <!-- Вторая колонка меню -->
-        <div class="f-menu">
+        <!-- <div class="f-menu">
           <p class="f-menu__title">Обучение</p>
 
           <ul class="f-menu__wrapper">
@@ -42,11 +42,11 @@
               <a class="f-menu__link" href="#">Ссылка 1</a>
             </li>
           </ul>
-        </div>
+        </div> -->
 
 
         <!-- Третья колонка меню -->
-        <div class="f-menu">
+        <!-- <div class="f-menu">
           <p class="f-menu__title">Разное</p>
 
           <ul class="f-menu__wrapper">
@@ -78,7 +78,7 @@
               <a class="f-menu__link" href="#">Ссылка 3</a>
             </li>
           </ul>
-        </div>
+        </div> -->
 
 
         <!-- Копирайт -->

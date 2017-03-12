@@ -1111,14 +1111,14 @@ body {
   list-style-type: none;
 }
 
-.s-menu__item {
+.s-menu__item, .s-menu__wrapper > .cat-item {
   position: relative;
   padding-top: 1.15rem;
   padding-bottom: 1.15rem;
   padding-left: 1.8rem;
 }
 
-.s-menu__link {
+.s-menu__link, .s-menu__wrapper > .cat-item a {
   color: #666;
   font-size: 1.5rem;
   font-weight: 300;
@@ -1126,11 +1126,11 @@ body {
   text-decoration: none;
 }
 
-.s-menu__link:hover {
+.s-menu__link:hover, .s-menu__wrapper > .cat-item a:hover {
   text-decoration: underline;
 }
 
-.s-menu__link:active {
+.s-menu__link:active, .s-menu__wrapper > .cat-item a:active {
   text-decoration: none;
 }
 
@@ -1157,18 +1157,18 @@ body {
   cursor: default;
 }
 
-.s-submenu {
+.s-submenu, .cat-item .children {
   margin: 2rem 0 0;
   padding: 0;
   list-style-type: none;
 }
 
-.s-submenu__item {
+.s-submenu__item, .children .cat-item {
   position: relative;
   padding-bottom: 2rem;
 }
 
-.s-submenu__item::before {
+.s-submenu__item::before, .children .cat-item::before {
   content: '';
   position: absolute;
   top: 0.6rem;
@@ -1178,11 +1178,11 @@ body {
   background-color: #ccc;
 }
 
-.s-submenu__item:last-of-type {
+.s-submenu__item:last-of-type, .children .cat-item:last-of-type {
   padding-bottom: 0;
 }
 
-.s-submenu__link {
+.s-submenu__link, .children .cat-item a {
   padding-left: 2em;
   color: #333;
   font-size: 1.3rem;
@@ -1191,11 +1191,11 @@ body {
   text-decoration: none;
 }
 
-.s-submenu__link:hover {
+.s-submenu__link:hover, .children .cat-item a:hover {
   text-decoration: underline;
 }
 
-.s-submenu__link:active {
+.s-submenu__link:active, .children .cat-item a:active {
   text-decoration: none;
 }
 
