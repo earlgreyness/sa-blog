@@ -2197,17 +2197,6 @@ html, body {
   text-decoration: underline;
 }
 
-/*.meta__tag {
-  display: inline;
-  vertical-align: middle;
-  margin-right: 0.5em;
-  color: #333 !important;
-  font-size: 1.3rem;
-  font-weight: 300;
-  line-height: 1.5;
-  text-decoration: underline;
-}*/
-
 .meta__tags a:hover {
   text-decoration: none;
 }
@@ -2699,7 +2688,7 @@ html, body {
   line-height: 2.6rem;
 }
 
-.tag {
+.tags a {
   display: inline-block;
   vertical-align: middle;
   margin-right: 0.5em;
@@ -2716,11 +2705,11 @@ html, body {
   text-decoration: none;
 }
 
-.tag:hover {
+.tags a:hover {
   text-decoration: underline;
 }
 
-.tag:active {
+.tags a:active {
   text-decoration: none;
 }
 
