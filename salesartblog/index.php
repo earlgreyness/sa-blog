@@ -7,26 +7,6 @@
       ----------------------------------- -->
       <main class="main">
 
-        <!-- Хлебные крошки -->
-        <ul class="breadcrumbs">
-          <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link" href="#">Блог</a>
-          </li>
-
-          <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link" href="#">Аналитика</a>
-          </li>
-
-          <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link" href="#">Яндекс.Метрика</a>
-          </li>
-
-          <li class="breadcrumbs__item breadcrumbs__item--active">
-            <a class="breadcrumbs__link" href="#">Настройка сквозной аналитики (проверка на переполнение блока проверка на
-            переполнение блока)</a>
-          </li>
-        </ul>
-
         <!-- Анонсы статей -->
         <?php
         if ( have_posts() ) :
