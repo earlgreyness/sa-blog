@@ -59,7 +59,7 @@
       <div class="header__wrapper">
 
         <!-- Лого -->
-        <a class="h-logo"></a>
+        <a class="h-logo" href="http://salesart.ru"></a>
 
 
         <!-- Меню -->
@@ -88,7 +88,8 @@
         <address class="h-tel">
           <span class="h-tel__desc">Звонок по России бесплатный</span>
 
-          <a class="h-tel__number" href="tel:88002000600">8 800 2000 600</a>
+          <a class="h-tel__number" href="tel:84953084829">8 495 308 4829</a>
+
         </address>
 
 
