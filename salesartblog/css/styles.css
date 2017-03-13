@@ -2316,7 +2316,7 @@ html, body {
   text-transform: uppercase;
 }
 
-.category__text {
+.category__text, .category>p {
   margin: 0 0 2rem;
   color: #666;
   font-size: 1.4rem;
