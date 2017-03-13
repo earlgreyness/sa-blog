@@ -9,7 +9,12 @@
 
         <!-- Хлебные крошки -->
         <ul class="breadcrumbs">
-          <li class="breadcrumbs__item">
+          <?php if ( function_exists( 'bcn_display' ) )
+          {
+              bcn_display();
+          }?>
+
+          <!-- <li class="breadcrumbs__item">
             <a class="breadcrumbs__link" href="#">Блог</a>
           </li>
 
@@ -23,7 +28,7 @@
 
           <li class="breadcrumbs__item breadcrumbs__item--active">
             <a class="breadcrumbs__link" href="#">Настройка сквозной аналитики</a>
-          </li>
+          </li> -->
         </ul>
 
         <?php
@@ -46,7 +51,7 @@
           <div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,moimir,gplus,twitter" data-counter=""></div>
         </div>
 
-        <div class="other">
+        <!-- <div class="other">
           <p class="other__title">Другие статьи</p>
 
           <div class="other__wrapper">
@@ -76,7 +81,7 @@
               </div>
             </a>
           </div>
-        </div>
+        </div> -->
 
       </main>
 

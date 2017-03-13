@@ -9,18 +9,10 @@
 
         <!-- Хлебные крошки -->
         <ul class="breadcrumbs">
-          <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link" href="#">Блог</a>
-          </li>
-
-          <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link" href="#">Аналитика</a>
-          </li>
-
-          <li class="breadcrumbs__item breadcrumbs__item--active">
-            <a class="breadcrumbs__link" href="#">Яндекс.Метрика</a>
-          </li>
-
+          <?php if ( function_exists( 'bcn_display' ) )
+          {
+              bcn_display();
+          }?>
         </ul>
 
         <!-- Для страницы "Категория" -->
