@@ -8,7 +8,7 @@
 
     <span class="meta__name"><?php the_author(); ?>,&nbsp;</span>
 
-    <span class="meta__date"><?php the_date(); ?>,&nbsp;</span>
+    <span class="meta__date"><?php the_time(get_option('date_format')); ?>,&nbsp;</span>
 
     <?php
     $tag_list = get_the_tag_list( '<span class="meta__tags">', '', '</span>' );

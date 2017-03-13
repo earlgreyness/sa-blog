@@ -2212,7 +2212,7 @@ html, body {
   font-size: 0;
 }
 
-.pagination__prev, .pagination__next {
+.pagination__prev, .pagination__next, a.prev, a.next {
   display: inline-block;
   margin-bottom: 1rem;
   margin-right: 0.75em;
@@ -2237,11 +2237,11 @@ html, body {
   transition: all 100ms linear;
 }
 
-.pagination__prev:hover, .pagination__next:hover {
+.pagination__prev:hover, .pagination__next:hover, a.next:hover, a.prev:hover {
   background-color: #ccc;
 }
 
-.pagination__link {
+.pagination__link, [class="page-numbers"], span.page-numbers {
   display: inline-block;
   margin-bottom: 1rem;
   margin-right: 0.75em;
@@ -2265,15 +2265,15 @@ html, body {
   transition: all 100ms linear;
 }
 
-.pagination__link:hover {
+.pagination__link:hover, [class="page-numbers"]:hover, span.page-numbers:hover {
   background-color: #ccc;
 }
 
-.pagination__link--active {
+.pagination__link--active, span.page-numbers.current {
   background-color: #ccc;
 }
 
-.pagination__ellipsis {
+.pagination__ellipsis, .dots {
   display: inline-block;
   margin-bottom: 1rem;
   margin-right: 0.75em;
@@ -2288,14 +2288,14 @@ html, body {
 }
 
 @media (max-width: 767px) {
-  .pagination__prev, .pagination__next {
+  .pagination__prev, .pagination__next, a.next, a.prev {
     margin-right: 0.5em;
     padding: 0 1em;
     height: 3rem;
     font-size: 1.2rem;
     line-height: 2.9rem;
   }
-  .pagination__link {
+  .pagination__link, [class="page-numbers"], span.page-numbers {
     margin-right: 0.75em;
     width: 3rem;
     height: 3rem;
