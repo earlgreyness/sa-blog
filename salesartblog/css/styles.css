@@ -2084,6 +2084,16 @@ html, body {
   line-height: 1.2;
 }
 
+.post__title a, .post__title a:visited, .post__title a:active {
+  color: black;
+  text-decoration: none;
+}
+
+.post__title a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
 .post__thumb {
   display: block;
   margin: 0 auto 2rem;
@@ -2570,7 +2580,8 @@ html, body {
   display: block;
 }
 
-.gallery__caption {
+.gallery__caption, .wp-caption-text {
+  margin-top: 0;
   color: #999;
   font-size: 1.2rem;
   font-style: italic;

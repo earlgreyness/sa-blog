@@ -1,5 +1,5 @@
 <article class="post">
-  <p class="post__title"><?php the_title(); ?></p>
+  <p class="post__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
 
   <div class="meta">
     <svg class="meta__icon">
@@ -18,7 +18,7 @@
     ?>
   </div>
 
-  <?php the_post_thumbnail( array( 661, 413 ), array( 'class' => 'post__thumb' ) ); ?>
+  <?php the_post_thumbnail( 'salesart-image', array( 'class' => 'post__thumb' ) ); ?>
 
   <div class="post__content">
   <?php the_excerpt(); ?>

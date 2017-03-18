@@ -66,43 +66,43 @@ $('#subscribe-form, #modal-subscribe-form').submit(function() {
 //
 var viewportWidth = document.documentElement.clientWidth;
 
-if ( viewportWidth > 1024 ) {
+// if ( viewportWidth > 1024 ) {
 
-  setTimeout(function() {
-    $.magnificPopup.open({
+//   setTimeout(function() {
+//     $.magnificPopup.open({
 
-      type: 'inline',
-      showCloseBtn: false,
-      midClick: true,
+//       type: 'inline',
+//       showCloseBtn: false,
+//       midClick: true,
 
-      items: {
-        src: '#modal-subscribe'
-      },
+//       items: {
+//         src: '#modal-subscribe'
+//       },
 
-      mainClass: 'mfp-fade',
+//       mainClass: 'mfp-fade',
 
-    });
-  }, 5000);
+//     });
+//   }, 5000);
 
-}
+// }
 
-$('.m-subscribe').click(function() {
+// $('.m-subscribe').click(function() {
 
-  $.magnificPopup.open({
+//   $.magnificPopup.open({
 
-    type: 'inline',
-    showCloseBtn: false,
-    midClick: true,
+//     type: 'inline',
+//     showCloseBtn: false,
+//     midClick: true,
 
-    items: {
-      src: '#modal-subscribe'
-    },
+//     items: {
+//       src: '#modal-subscribe'
+//     },
 
-    mainClass: 'mfp-fade',
+//     mainClass: 'mfp-fade',
 
-  });
+//   });
 
-});
+// });
 
 
 //

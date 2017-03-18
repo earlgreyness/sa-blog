@@ -53,3 +53,15 @@ function get_category_tags( $category_id ) {
     return $tags;
 }
 
+
+
+add_image_size( 'salesart-image', 661, 9999 );
+
+add_filter( 'image_size_names_choose', 'salesart_custom_sizes' );
+
+function salesart_custom_sizes( $sizes ) {
+    return array_merge( $sizes, array(
+        'salesart-image' => __( 'SalesArt Image' ),
+    ) );
+}
+
