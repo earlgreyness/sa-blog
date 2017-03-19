@@ -4,14 +4,7 @@
       <aside class="sidebar">
 
         <!-- Поиск -->
-        <div class="s-search">
-          <p class="s-search__title">Поиск по блогу</p>
-
-          <form class="s-search__form" id="search-form" action="#" method="post">
-            <input class="s-search__input" name="s" type="text" placeholder="Введите запрос" data-required="true">
-          </form>
-        </div>
-
+        <?php get_search_form(); ?>
 
         <!-- Меню -->
         <nav class="s-menu">
