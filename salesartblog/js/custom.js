@@ -191,3 +191,12 @@ function cleanUpForm( form ) {
       .val('');
   });
 }
+
+
+$( document ).ready( function () {
+
+  $( '.wp-caption a' ).magnificPopup({
+    type: 'image'
+  });
+
+});
