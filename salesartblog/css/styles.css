@@ -1011,7 +1011,7 @@ body {
   right: 0;
   z-index: -1;
   width: 9999px;
-  height: 9999px;
+  height: 99999px;
   background: url("../img/bg-sidebar.jpg") repeat;
 }
 
@@ -1458,7 +1458,7 @@ body {
   .s-menu__title {
     display: none;
   }
-  .s-menu__item {
+  .s-menu__item, .s-menu__wrapper > .cat-item {
     display: inline-block;
     vertical-align: top;
     margin-right: 1rem;
@@ -1475,7 +1475,7 @@ body {
   .s-menu__link--active::before {
     display: none;
   }
-  .s-submenu {
+  .s-submenu, .cat-item .children {
     display: none !important;
   }
   .s-subscribe {
@@ -1490,7 +1490,7 @@ body {
 }
 
 @media (max-width: 567px) {
-  .s-menu__link {
+  .s-menu__link, .s-menu__wrapper > .cat-item a {
     font-size: 1.3rem;
     line-height: 1;
   }
@@ -2874,4 +2874,20 @@ html, body {
     max-width: 100%;
     height: auto;
   }
+}
+
+
+
+.wp-caption {
+  max-width: 100% !important;
+  width: auto !important;
+}
+
+.wp-caption a {
+  display: block !important;
+}
+
+.wp-caption img {
+  max-width: 100% !important;
+  height: auto !important;
 }
