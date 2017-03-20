@@ -64,7 +64,7 @@ $('#subscribe-form, #modal-subscribe-form').submit(function() {
 //
 // Инициализация
 //
-var viewportWidth = document.documentElement.clientWidth;
+// var viewportWidth = document.documentElement.clientWidth;
 
 // if ( viewportWidth > 1024 ) {
 
@@ -86,23 +86,23 @@ var viewportWidth = document.documentElement.clientWidth;
 
 // }
 
-// $('.m-subscribe').click(function() {
+$('.m-subscribe').click(function() {
 
-//   $.magnificPopup.open({
+  $.magnificPopup.open({
 
-//     type: 'inline',
-//     showCloseBtn: false,
-//     midClick: true,
+    type: 'inline',
+    showCloseBtn: false,
+    midClick: true,
 
-//     items: {
-//       src: '#modal-subscribe'
-//     },
+    items: {
+      src: '#modal-subscribe'
+    },
 
-//     mainClass: 'mfp-fade',
+    mainClass: 'mfp-fade',
 
-//   });
+  });
 
-// });
+});
 
 
 //
